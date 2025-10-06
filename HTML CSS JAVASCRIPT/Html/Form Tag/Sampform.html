@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /* align form rows and radio buttons */
+      form .row { display:flex; align-items:center; gap:12px; margin:8px 0; }
+      form label.inline { display:flex; align-items:center; gap:6px; cursor:pointer; }
+      .radio-group { display:flex; gap:12px; align-items:center; }
+      input[type="radio"] { margin:0; /* remove browser default offset */ }
+    </style>
+</head>
+<body bgcolor="lightblue">
+    <form action="post" target="_blank">
+
+        <label for="Developer">Developer:&nbsp:</label>
+        <input type="text" id="Developer" name="Developer" value="Shekhar Kumar Chaudhary" readonly>
+      
+  
+  
+        
+       <Div>
+        <label for="Username">Username &nbsp:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+       </Div> 
+       <div>
+        <label for="password">Password &nbsp;&nbsp;:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+       </div>
+       <Div>
+        <label for="Email">Email &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="Email" id="Email" placeholder="Enter your Email" required>
+       </Div>
+       <Div>
+       <select name="country" id="country ">
+  <option value="Australia">Australia</option>
+  <option value="Brazil">Brazil</option>
+  <option value="Canada">Canada</option> 
+  <option value="Denmark">Denmark</option>
+  <option value="Ethiopia">Ethiopia</option> 
+    <option value="Finland">Finland</option>
+    <option value="Germany">Germany</option>
+    <option value="Hungary">Hungary</option>
+    <option value="India">India</option>
+    <option value="Japan">Japan</option>
+    <option value="Kenya">Kenya</option>
+    <option value="Luxembourg">Luxembourg</option>
+    <option value="Mexico">Mexico</option>
+    <option value="Netherlands">Netherlands</option>
+    <option value="Nepal">Nepal</option>  
+    <option value="Oman">Oman</option>
+    <option value="Portugal">Portugal</option>
+    <option value="Qatar">Qatar</option>
+    <option value="Russia">Russia</option>
+    <option value="Spain">Spain</option>
+    <option value="Turkey">Turkey</option>
+    <option value="Uganda">Uganda</option>
+    <option value="Vietnam">Vietnam</option>
+    <option value="Yemen">Yemen</option>
+    <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+</Div>
+
+
+
+<div class="row radio-group">
+  <label class="inline"><input type="radio" name="gender" value="male" required> Male</label>
+  <label class="inline"><input type="radio" name="gender" value="female"> Female</label>
+  <label class="inline"><input type="radio" name="gender" value="other"> Other</label>
+</div>
+<div>
+    <form>
+  <label for="myfile">Upload a file:</label><br><br>
+  <input type="file" id="myfile" name="myfile">
+  <br><br>
+ 
+</form>
+
+</div>
+<DIv>
+    Feedback: <br><textarea name="message" rows="4" cols="50" placeholder="Please Enter Your Feedback"></textarea>
+
+</DIv>
+        <Div><button type="submit">Submit</button></Div>
+    </form>
+</body>
+</html>

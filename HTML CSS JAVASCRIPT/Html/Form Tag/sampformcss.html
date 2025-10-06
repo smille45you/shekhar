@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <style>
+    body {
+      background-color: lightblue;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: auto;
+    }
+    div {
+      margin-bottom: 15px;
+    }
+    label {
+      display: inline-block;
+      width: 100px;
+    }
+    input, select, textarea, button {
+      width: calc(100% - 110px);
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: auto;
+      background: #0077cc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" method="post" target="_blank">
+    <div>
+      <label for="developer">Developer:</label>
+      <input type="text" id="developer" name="developer" value="Shekhar Kumar Chaudhary" readonly>
+    </div>
+
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    </div>
+
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div>
+      <label for="country">Country:</label>
+      <select name="country" id="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="Australia">Australia</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Canada">Canada</option>
+        <option value="Nepal">Nepal</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <!-- Trimmed list: you can add more -->
+      </select>
+    </div>
+
+    <div>
+      <span>Gender:</span>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label>
+    </div>
+
+    <div>
+      <label for="myfile">Upload a file:</label>
+      <input type="file" id="myfile" name="myfile">
+    </div>
+
+    <div>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="message" rows="4" placeholder="Please enter your feedback"></textarea>
+    </div>
+
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>

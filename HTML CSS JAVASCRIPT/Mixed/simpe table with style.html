@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Styled Table Example</title> 
+  <style>
+    table {
+      width: 50%; /* Table takes 50% of the page width */
+      border-collapse: collapse; /* Merge borders into single line */
+      margin: 20px auto; /* Center the table */
+      font-family: Arial, sans-serif; /* Font sty#42445Ale */
+    }
+
+    th, td {
+      border: 1px solid #333; /* Border around each cell */
+      padding: 10px; /* Space inside each cell */
+      text-align: center; /* Center text */
+    }
+
+    th {
+      background-color: #f4b400; /* Yellow background for headers */
+      color: white; /* White text color */
+    }
+
+    tr:nth-child(even) {
+      background-color: hsl(115, 84%, 71%); /* Light gray for even rows */
+    }
+
+    tr:hover {
+      background-color: hsl(206, 89%, 56%); /* Highlight row when hovering */
+    }
+
+    caption {
+      caption-side: top; /* Position of table title */
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Vehicle Washing Rates</h2>
+
+  <table>
+    <caption>Price List</caption>
+    <tr>
+      <th>Vehicle</th>
+      <th>Price (Rs.)</th>
+    </tr>
+    <tr>
+      <td>Car</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <td>SUV</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Taxi</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>Bike</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Scooter</td>
+      <td>70</td>
+    </tr>
+  </table>
+</body>
+
+</html>

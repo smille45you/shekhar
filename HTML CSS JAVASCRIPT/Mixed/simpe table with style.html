@@ -14,7 +14,7 @@
     }
 
     th, td {
-      border: 1px solid #333; /* Border around each cell */
+      border: 2px solid #1714ec; /* Border around each cell */
       padding: 10px; /* Space inside each cell */
       text-align: center; /* Center text */
     }
@@ -27,12 +27,15 @@
     tr:nth-child(even) {
       background-color: hsl(115, 84%, 71%); /* Light gray for even rows */
     }
-
+tr:nth-child(odd){
+  background-color: brown;
+}
     tr:hover {
       background-color: hsl(206, 89%, 56%); /* Highlight row when hovering */
     }
 
     caption {
+      color:red;
       caption-side: top; /* Position of table title */
       font-size: 18px;
       font-weight: bold;

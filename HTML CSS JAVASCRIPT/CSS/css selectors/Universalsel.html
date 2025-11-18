@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        /* Universal selector */
+        * {
+            margin: 0;          /* Remove default margins */
+            padding: 0;         /* Remove default padding */
+            box-sizing: border-box; /* Include padding and border in width/height */
+            font-family: Arial, sans-serif; /* Apply same font to all elements */
+        }
+
+        body {
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #3333cc;
+            background-color: aqua;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555555;
+            line-height: 1.6;
+            /* Line-height is a CSS property that controls the vertical spacing between lines of text.*/
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </Style>
+</head>
+<body>
+     <h1>Universal Selector Example</h1>
+    <p>This paragraph inherits the universal styles. No default margin or padding, font is Arial.</p>
+    <p class="highlight">This paragraph is highlighted but still uses the universal styles.</p>
+</body>
+</html>

@@ -1,0 +1,12 @@
+     /* Center the site title */
+        .container  h1 {
+            text-align: center;
+            margin: 0.5rem 0;
+            color: orangered;
+            font-size: 5em;
+            font-style: oblique;
+        }
+    .container header nav a {
+        color: rgb(221, 44, 44);
+        text-decoration: none;
+    }

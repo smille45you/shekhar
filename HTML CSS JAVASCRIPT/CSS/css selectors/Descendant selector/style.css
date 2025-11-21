@@ -1,0 +1,27 @@
+/* 1. All paragraph inside the container */
+.container p  {
+    color: darkblue;
+    }
+    /* 2.Only paragraph inside section.features */
+.container .features  p {
+        color: rgb(92, 13, 238);
+        font-weight: bold;
+        font-size: 10px;
+    }
+    /* 3. All links inside nav inside header */
+.container header nav a {
+        color: rgb(204, 13, 13);
+        text-decoration: none;
+    }
+    /* 4. All h2 elements inside feature-box inside features */
+    .container .features .feature-box h2 {
+        font-size: 20px;
+        color: purple;
+    }
+    /* 5. All span anywhere inside container */
+    .container span {
+        font-style: italic;
+        color: orange;
+    }
+    
+    }

@@ -1,0 +1,82 @@
+html,body {    /* this selector targets both html and body elements */
+    height: 100%; /* sets the height of both elements to 100% of the viewport height */
+    margin: 0;  /* removes default margin */
+    padding: 0; /* removes default padding */
+}
+body {
+    font-family: 'Roboto', sans-serif; /* sets the font family for the body element */
+    font-weight: 100; /* sets the font weight for the body element */
+}
+.container {
+    margin: 0 auto; /* centers the container horizontally */
+    max-width: 940px; /* sets the maximum width of the container */
+    padding: 0 10px; /* adds horizontal padding to the container */
+
+}
+.header {
+    background: url("download.jpg") no-repeat center center;   /* sets a background image for the header */
+    background-size: cover; /* makes the background image cover the entire header */
+    height: 800px; /* sets the height of the header */
+    text-align: center; /* centers text horizontally within the header */
+}
+.header .container { /* targets the container within the header */
+    position: relative; /* sets the position to relative for positioning child elements */
+    top: 200px; /* moves the container down by 200px */
+
+}
+.header h1 {
+    color: #fff;
+    line-height: 100px;
+    font-size:80px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+@media (min-width:850) {
+    .header h1 {
+        font-size:120px;
+    }
+}
+.header p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+
+}
+.btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none;
+    transition: background .5s;
+}
+.nav {
+    background: #000;
+    height: 80px;
+    width: 100%;
+}
+.nav ul {
+    height: 80px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.nav ul li {
+    color: #fff;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    padding: 0 10px;
+    transition: background .5s;
+}
+.main .container {
+    margin:80px auto;
+}
+.main img {
+    float: left;
+    margin: 50px 80px 50px 0;
+}

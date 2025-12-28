@@ -1,0 +1,7 @@
+.main-menu li{
+    color: rgb(238, 109, 109);
+}
+.main-menu .submenu li{
+    color: blue;
+    font-size: 14px;
+}
